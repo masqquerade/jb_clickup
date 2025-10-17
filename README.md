@@ -1,6 +1,9 @@
 # Integration of YouTrack issues with GitHub | JetBrains internship test task
 This is my solution for the **Import from ClickUp to YouTrack** test task. This tool imports issues from GitHub to YouTrack and synchronizes further changes.
 
+## Video demo:
+
+
 # Getting started
 ### 1. Clone the repository
 `git clone https://github.com/masqquerade/jb_clickup.git`
