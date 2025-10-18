@@ -13,7 +13,7 @@ This tool synchonizes GitHub issues with YouTrack using a webhook that tracks ch
 On the initial run, it imports all unique issues from GitHub into YouTrack.
 If an issue already exists in YouTrack, it will be skipped.
 
-To link issues between two systems, the tool adds a custom field called `GitHub Key` to each imported issue. The value if this field follow the format: `<username>/<repository-name>#<issue-number>`
+To link issues between two systems, the tool adds a custom field called `GitHub Key` to each imported issue. The value if this field follows the format: `<username>/<repository-name>#<issue-number>`
 
 **Assignees**
 
@@ -57,7 +57,7 @@ The tool listens for and processes the following events:
 
 ### 4. Setup smee.io
 To expose local server I used [smee.io](https://smee.io/). 
-GitHub has detailed step-by-step guide for it: 
+GitHub has detailed step-by-step guide for it: [Handling webhook deliveries](https://docs.github.com/en/webhooks/using-webhooks/handling-webhook-deliveries)
 
 ### 4. Run the proxy & Start the tool in developer mode
 `smee --url <your-smee-url> --path /webhook --port <port>`
