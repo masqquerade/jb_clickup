@@ -1,7 +1,13 @@
 # Integration of YouTrack issues with GitHub | JetBrains internship test task
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue)](#)
+[![Node.js](https://img.shields.io/badge/Node.js-18%2B-green)](#)
+[![GitHub API](https://img.shields.io/badge/GitHub-REST%20API-black)](#)
+[![YouTrack](https://img.shields.io/badge/YouTrack-REST%20API-purple)](#)
+
 This is my solution for the **Import from ClickUp to YouTrack** test task. This tool imports issues from GitHub to YouTrack and synchronizes further changes.
 
 ### Video demo:
+[Youtube video](https://youtu.be/ZjaPEp95DzY)
 
 # Overview
 This tool synchonizes GitHub issues with YouTrack using a webhook that tracks changes in real time.
