@@ -6,8 +6,7 @@
 
 This is my solution for the **Import from ClickUp to YouTrack** test task. This tool imports issues from GitHub to YouTrack and synchronizes further changes.
 
-### Video demo:
-[Youtube video](https://youtu.be/ZjaPEp95DzY)
+[Demo](https://youtu.be/ZjaPEp95DzY)
 
 # Overview
 This tool synchonizes GitHub issues with YouTrack using a webhook that tracks changes in real time.
