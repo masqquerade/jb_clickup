@@ -56,4 +56,5 @@ GitHub has detailed step-by-step guide for it:
 
 ### 4. Run the proxy & Start the tool in developer mode
 `smee --url <your-smee-url> --path /webhook --port <port>`
+
 `npm run dev`
