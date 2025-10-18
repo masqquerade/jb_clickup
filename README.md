@@ -57,7 +57,7 @@ The tool listens for and processes the following events:
 
 ### 4. Setup smee.io
 To expose local server I used [smee.io](https://smee.io/). 
-GitHub has detailed step-by-step guide for it: [Handling webhook deliveries](https://docs.github.com/en/webhooks/using-webhooks/handling-webhook-deliveries)
+GitHub has detailed step-by-step guide for it: [Handling webhook deliveries](https://docs.github.com/en/webhooks/using-webhooks/handling-webhook-deliveries). You can also use other proxies, for example [nginx](https://nginx.org/).
 
 ### 4. Run the proxy & Start the tool in developer mode
 `smee --url <your-smee-url> --path /webhook --port <port>`
