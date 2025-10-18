@@ -54,5 +54,6 @@ The tool listens for and processes the following events:
 To expose local server I used [smee.io](https://smee.io/). 
 GitHub has detailed step-by-step guide for it: 
 
-### 4. Start the tool in developer mode
+### 4. Run the proxy & Start the tool in developer mode
+`smee --url <your-smee-url> --path /webhook --port <port>`
 `npm run dev`
