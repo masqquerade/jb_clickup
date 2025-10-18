@@ -3,6 +3,31 @@ This is my solution for the **Import from ClickUp to YouTrack** test task. This 
 
 ### Video demo:
 
+# Overview
+This tool synchonizes GitHub issues with YouTrack using a webhook that tracks changes in real time.
+On the initial run, it imports all unique issues from GitHub into YouTrack.
+If an issue already exists in YouTrack, it will be skipped.
+
+To link issues between two systems, the tool adds a custom field called `GitHub Key` to each imported issue. The value if this field follow the format: `<username>/<repository-name>#<issue-number>`
+
+**Assignees**
+
+GitHub allows multiple collaborators to be assigned to the same issue, while YouTrack does not directly support this behavior. To replicate it, the tool uses a **multi-value custom field** to store all assigned users. It attempts to match GitHub users to existing YouTrack accounts based on their **email adresses** or **names**.
+
+**Labels**
+
+GitHub labels are represented as **tags** in YouTrack. During import and synchronization, all labels associated with an issue are automatically mirrored as YouTrack tags.
+
+**Tracked Changes**
+
+The tool listens for and processes the following events:
+
+- **Issue opened / closed / reopened**
+- **Issue deleted**
+- **Issue edited** (title or description changes)
+- **Collaborator(s) assigned or unassigned**
+- **Label(s) added or removed***
+
 # Getting started
 ### 1. Clone the repository
 `git clone https://github.com/masqquerade/jb_clickup.git`
