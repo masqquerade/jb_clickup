@@ -1,8 +1,7 @@
 # Integration of YouTrack issues with GitHub | JetBrains internship test task
 This is my solution for the **Import from ClickUp to YouTrack** test task. This tool imports issues from GitHub to YouTrack and synchronizes further changes.
 
-## Video demo:
-
+### Video demo:
 
 # Getting started
 ### 1. Clone the repository
@@ -25,6 +24,10 @@ This is my solution for the **Import from ClickUp to YouTrack** test task. This 
 - `GH_NAME` - GitHub login that hosts your repository
 - `REPO_NAME` - The name of repository
 - `SERVER_PORT` - Server port (e.g. 3000)
+
+### 4. Setup smee.io
+To expose local server I used [smee.io](https://smee.io/). 
+GitHub has detailed step-by-step guide for it: 
 
 ### 4. Start the tool in developer mode
 `npm run dev`
