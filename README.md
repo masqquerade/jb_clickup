@@ -13,7 +13,7 @@ This tool synchonizes GitHub issues with YouTrack using a webhook that tracks ch
 On the initial run, it imports all unique issues from GitHub into YouTrack.
 If an issue already exists in YouTrack, it will be skipped.
 
-To link issues between two systems, the tool adds a custom field called `GitHub Key` to each imported issue. The value if this field follows the format: `<username>/<repository-name>#<issue-number>`
+To link issues between two systems, the tool adds a custom field called `GitHub Key` to each imported issue. The value if this field follows the format: `<username>/<repository-name>#<issue-number>`.
 
 **Assignees**
 
@@ -27,11 +27,11 @@ GitHub labels are represented as **tags** in YouTrack. During import and synchro
 
 The tool listens for and processes the following events:
 
-- **Issue opened / closed / reopened**
-- **Issue deleted**
-- **Issue edited** (title or description changes)
-- **Collaborator(s) assigned or unassigned**
-- **Label(s) added or removed***
+- **Issue opened / closed / reopened**.
+- **Issue deleted**.
+- **Issue edited** (title or description changes).
+- **Collaborator(s) assigned or unassigned**.
+- **Label(s) added or removed**.
 
 # Getting started
 ### 1. Clone the repository
@@ -47,15 +47,18 @@ The tool listens for and processes the following events:
 `touch .env`
 
 #### 3.2 Setup .env file:
-- `GITHUB_TOKEN` - Your GitHub API Token
-- `BASE_URL` - Base URL of your YouTrack instance (e.g. https://testimg.youtrack.cloud)
-- `PROJECT_NAME` - Name of your YouTrack project
+- `GITHUB_TOKEN` - Your GitHub API Token.
+- `BASE_URL` - Base URL of your YouTrack instance (e.g. https://testimg.youtrack.cloud).
+- `PROJECT_NAME` - Name of your YouTrack project.
 - `YT_TOKEN` - Your YouTrack token. You must be an admin.
-- `GH_NAME` - GitHub login that hosts your repository
-- `REPO_NAME` - The name of repository
-- `SERVER_PORT` - Server port (e.g. 3000)
+- `GH_NAME` - GitHub login that hosts your repository.
+- `REPO_NAME` - The name of repository.
+- `SERVER_PORT` - Server port (e.g. 3000).
 
-### 4. Setup smee.io
+#### 3.3 Create a webhook
+To create a repository webhook, follow the instructions in [Creating a repository webhook](https://docs.github.com/en/webhooks/using-webhooks/creating-webhooks#creating-a-repository-webhook).
+
+#### 3.4. Setup smee.io
 To expose local server I used [smee.io](https://smee.io/). 
 GitHub has detailed step-by-step guide for it: [Handling webhook deliveries](https://docs.github.com/en/webhooks/using-webhooks/handling-webhook-deliveries). You can also use other proxies, for example [nginx](https://nginx.org/).
 
